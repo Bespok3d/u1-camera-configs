@@ -1,0 +1,71 @@
+{
+  "name": "webcam-builtin",
+  "title": "Built-in Camera",
+  "version": "0.1.1",
+  "min_daemon_version": "0.10.1-dev",
+  "description": "Registers the printer's built-in MIPI camera as a Moonraker [webcam] entry, so Fluidd and Mainsail show it alongside any other configured camera. WebRTC stream from /webcam/webrtc, JPEG snapshots from /webcam/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
+  "tagline": "Show the built-in MIPI camera in Fluidd & Mainsail.",
+  "category": "camera",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2025-11-03",
+  "updated_at": "2026-01-15",
+  "source": "https://github.com/bespok3d-org/plugin-webcam-builtin",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "webcam-builtin"
+    }
+  ],
+  "require": [
+    {
+      "service": "camera-service",
+      "cardinality": "one"
+    }
+  ],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "camera-mipi"
+    ],
+    "variables": [
+      {
+        "name": "BUILTIN_CAMERA_NAME",
+        "description": "Display name for the built-in camera in Fluidd/Mainsail (e.g. \"Built-in\", \"Toolhead\", \"Side\").",
+        "required": true
+      }
+    ]
+  },
+  "config": [
+    {
+      "key": "BUILTIN_CAMERA_NAME",
+      "label": "Camera name in Fluidd/Mainsail",
+      "type": "text",
+      "placeholder": "Built-in",
+      "default": "Built-in",
+      "hint": "Whatever you want it called in the UI: Built-in, Toolhead, Side, etc.",
+      "required": true,
+      "userEditable": true
+    }
+  ],
+  "permissions": [
+    "moonraker-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "moonraker-config",
+        "src": "files/webcam.conf.tmpl",
+        "name": "webcam-builtin.cfg",
+        "render": true
+      }
+    ],
+    "restart": [
+      "moonraker"
+    ]
+  },
+  "endpoints": [],
+  "conflict_resolutions": [],
+  "files": []
+}
