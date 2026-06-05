@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "name": "U1 Camera Configs",
+  "publisher": "PLACEHOLDER",
+  "updated": "2026-02-01",
+  "plugins": [
+    {
+      "name": "webcam-builtin",
+      "title": "Built-in Camera",
+      "version": "0.1.1",
+      "description": "Registers the printer's built-in MIPI camera as a Moonraker [webcam] entry, so Fluidd and Mainsail show it alongside any other configured camera. WebRTC stream from /webcam/webrtc, JPEG snapshots from /webcam/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
+      "tagline": "Show the built-in MIPI camera in Fluidd & Mainsail.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2025-11-03",
+      "updated_at": "2026-01-15",
+      "requires": {
+        "capabilities": [
+          "camera-mipi"
+        ]
+      },
+      "provides": [
+        "webcam-builtin"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/439282217",
+      "min_daemon_version": "0.10.1-dev",
+      "config": [
+        {
+          "key": "BUILTIN_CAMERA_NAME",
+          "label": "Camera name in Fluidd/Mainsail",
+          "type": "text",
+          "placeholder": "Built-in",
+          "default": "Built-in",
+          "hint": "Whatever you want it called in the UI: Built-in, Toolhead, Side, etc.",
+          "required": true,
+          "userEditable": true
+        }
+      ],
+      "deps": [
+        "camera-service"
+      ]
+    },
+    {
+      "name": "webcam-screen",
+      "title": "Printer Screen as Camera",
+      "version": "0.1.1",
+      "description": "Registers the framebuffer mirror from the Remote Screen plugin as a Moonraker [webcam] iframe entry, so Fluidd and Mainsail show the printer's touchscreen alongside other cameras. Aspect ratio fixed at 480:320 for the U1's screen. Requires the Remote Screen plugin to actually serve /screen/.",
+      "tagline": "Show the on-device touchscreen as a camera tile in Fluidd & Mainsail.",
+      "category": "screen",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2025-11-20",
+      "updated_at": "2026-02-01",
+      "requires": {
+        "capabilities": []
+      },
+      "provides": [
+        "webcam-screen"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-screen/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/439282235",
+      "min_daemon_version": "0.10.1-dev",
+      "config": [
+        {
+          "key": "REMOTE_SCREEN_NAME",
+          "label": "Screen name in Fluidd/Mainsail",
+          "type": "text",
+          "placeholder": "Printer Screen",
+          "default": "Printer Screen",
+          "hint": "Letters, numbers, spaces, and . - : / _ @ only.",
+          "required": true,
+          "userEditable": true
+        }
+      ],
+      "deps": [
+        "screen-service"
+      ]
+    },
+    {
+      "name": "webcam-usb",
+      "title": "USB Camera",
+      "version": "0.1.1",
+      "description": "Registers an external USB camera as a Moonraker [webcam] entry. WebRTC stream from /webcam2/webrtc, JPEG snapshots from /webcam2/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
+      "tagline": "Show the external USB camera in Fluidd & Mainsail.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2025-11-03",
+      "updated_at": "2026-01-15",
+      "requires": {
+        "capabilities": [
+          "camera-usb"
+        ]
+      },
+      "provides": [
+        "webcam-usb"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/439282257",
+      "min_daemon_version": "0.10.1-dev",
+      "config": [
+        {
+          "key": "USB_CAMERA_NAME",
+          "label": "Camera name in Fluidd/Mainsail",
+          "type": "text",
+          "placeholder": "USB",
+          "default": "USB",
+          "hint": "Whatever you want it called in the UI: USB, External, Bed View, etc.",
+          "required": true,
+          "userEditable": true
+        }
+      ],
+      "deps": [
+        "camera-service"
+      ]
+    }
+  ],
+  "lists": []
+}
