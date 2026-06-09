@@ -8,6 +8,7 @@
   "category": "screen",
   "channel": "stable",
   "printer_specific": true,
+  "changelog": "doc/CHANGELOG.md",
   "published_at": "2025-11-20",
   "updated_at": "2026-02-01",
   "source": "https://github.com/bespok3d-org/plugin-webcam-screen",
