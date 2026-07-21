@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "U1 Camera Configs",
-  "publisher": "PLACEHOLDER",
+  "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
   "updated": "2026-02-01",
   "plugins": [
     {
@@ -12,7 +12,7 @@
       "tagline": "Show the built-in MIPI camera in Fluidd & Mainsail.",
       "category": "camera",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2025-11-03",
       "updated_at": "2026-01-15",
@@ -40,7 +40,7 @@
       ],
       "changelog_url": "webcam-builtin/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/481342833",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/484994395",
       "deps": [
         "camera-service"
       ]
@@ -53,7 +53,7 @@
       "tagline": "Show the on-device touchscreen as a camera tile in Fluidd & Mainsail.",
       "category": "screen",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2025-11-20",
       "updated_at": "2026-02-01",
@@ -79,7 +79,7 @@
       ],
       "changelog_url": "webcam-screen/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-screen/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/481342851",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/484994426",
       "deps": [
         "screen-service"
       ]
@@ -92,7 +92,7 @@
       "tagline": "Show the external USB camera in Fluidd & Mainsail.",
       "category": "camera",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2025-11-03",
       "updated_at": "2026-01-15",
@@ -120,7 +120,7 @@
       ],
       "changelog_url": "webcam-usb/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/481342877",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/484994459",
       "deps": [
         "camera-service"
       ]
