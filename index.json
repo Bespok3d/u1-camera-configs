@@ -40,7 +40,7 @@
       ],
       "changelog_url": "webcam-builtin/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486304492",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486311851",
       "deps": [
         "camera-service"
       ]
@@ -79,7 +79,7 @@
       ],
       "changelog_url": "webcam-screen/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-screen/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486304510",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486311871",
       "deps": [
         "screen-service"
       ]
@@ -120,7 +120,7 @@
       ],
       "changelog_url": "webcam-usb/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486304533",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486311895",
       "deps": [
         "camera-service"
       ]
