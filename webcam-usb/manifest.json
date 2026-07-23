@@ -2,6 +2,7 @@
   "name": "webcam-usb",
   "title": "USB Camera",
   "version": "0.1.1",
+  "author": "bespoked",
   "min_daemon_version": "0.10.1-dev",
   "description": "Registers an external USB camera as a Moonraker [webcam] entry. WebRTC stream from /webcam2/webrtc, JPEG snapshots from /webcam2/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
   "tagline": "Show the external USB camera in Fluidd & Mainsail.",
