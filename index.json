@@ -16,6 +16,7 @@
       "printer_specific": true,
       "published_at": "2025-11-03",
       "updated_at": "2026-01-15",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "camera-mipi"
@@ -40,7 +41,7 @@
       ],
       "changelog_url": "webcam-builtin/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486461317",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/487124704",
       "deps": [
         "camera-service"
       ]
@@ -57,6 +58,7 @@
       "printer_specific": true,
       "published_at": "2025-11-20",
       "updated_at": "2026-02-01",
+      "author": "bespoked",
       "requires": {
         "capabilities": []
       },
@@ -79,7 +81,7 @@
       ],
       "changelog_url": "webcam-screen/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-screen/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486461345",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/487124771",
       "deps": [
         "screen-service"
       ]
@@ -96,6 +98,7 @@
       "printer_specific": true,
       "published_at": "2025-11-03",
       "updated_at": "2026-01-15",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "camera-usb"
@@ -120,7 +123,7 @@
       ],
       "changelog_url": "webcam-usb/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/486461366",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/487124819",
       "deps": [
         "camera-service"
       ]
