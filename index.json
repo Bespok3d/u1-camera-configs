@@ -2,7 +2,7 @@
   "schema_version": 1,
   "name": "U1 Camera Configs",
   "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
-  "updated": "2026-02-01",
+  "updated": "2026-07-27",
   "plugins": [
     {
       "name": "webcam-builtin",
@@ -41,49 +41,9 @@
       ],
       "changelog_url": "webcam-builtin/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/490662256",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/491827179",
       "deps": [
         "camera-service"
-      ]
-    },
-    {
-      "name": "webcam-screen",
-      "title": "Printer Screen as Camera",
-      "version": "0.1.1",
-      "description": "Registers the framebuffer mirror from the Remote Screen plugin as a Moonraker [webcam] iframe entry, so Fluidd and Mainsail show the printer's touchscreen alongside other cameras. Aspect ratio fixed at 480:320 for the U1's screen. Requires the Remote Screen plugin to actually serve /screen/.",
-      "tagline": "Show the on-device touchscreen as a camera tile in Fluidd & Mainsail.",
-      "category": "screen",
-      "channel": "stable",
-      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
-      "printer_specific": true,
-      "published_at": "2025-11-20",
-      "updated_at": "2026-02-01",
-      "author": "bespoked",
-      "requires": {
-        "capabilities": []
-      },
-      "provides": [
-        "webcam-screen"
-      ],
-      "conflicts": [],
-      "min_daemon_version": "0.10.1-dev",
-      "config": [
-        {
-          "key": "REMOTE_SCREEN_NAME",
-          "label": "Screen name in Fluidd/Mainsail",
-          "type": "text",
-          "placeholder": "Printer Screen",
-          "default": "Printer Screen",
-          "hint": "Letters, numbers, spaces, and . - : / _ @ only.",
-          "required": true,
-          "userEditable": true
-        }
-      ],
-      "changelog_url": "webcam-screen/doc/CHANGELOG.md",
-      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-screen/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/490662279",
-      "deps": [
-        "screen-service"
       ]
     },
     {
@@ -123,10 +83,136 @@
       ],
       "changelog_url": "webcam-usb/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/490662301",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/491827203",
       "deps": [
         "camera-service"
       ]
+    }
+  ],
+  "collections": [
+    {
+      "name": "double-camera",
+      "title": "Double Camera",
+      "version": "0.1.0",
+      "description": "Two camera views of the same print, set up in one install: the printer's built-in camera and a USB camera you plug in yourself. Includes the hardware video acceleration, so both streams are encoded on the printer's video chip instead of its CPU. Both cameras appear as their own tile in Fluidd and Mainsail.",
+      "tagline": "Built-in camera plus a USB camera, both accelerated.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
+      "printer_specific": true,
+      "published_at": "2026-07-27",
+      "updated_at": "2026-07-27",
+      "author": "bespoked",
+      "members": [
+        {
+          "id": "camera-hw-accel",
+          "version": ">=0.1.8"
+        },
+        {
+          "id": "webcam-builtin",
+          "version": ">=0.1.1"
+        },
+        {
+          "id": "webcam-usb",
+          "version": ">=0.1.1"
+        }
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/double-camera/doc/README.md",
+      "changelog_url": "double-camera/doc/CHANGELOG.md"
+    },
+    {
+      "name": "single-camera",
+      "title": "Single Camera",
+      "version": "0.1.0",
+      "description": "Everything you need to watch a print with the camera the printer already has. Installs the hardware video acceleration and the built-in camera tile together, so the camera shows up in Fluidd and Mainsail and the encoding runs on the printer's video chip instead of its CPU. Start here if you only want one camera.",
+      "tagline": "The built-in camera, working, in one install.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
+      "printer_specific": true,
+      "published_at": "2026-07-27",
+      "updated_at": "2026-07-27",
+      "author": "bespoked",
+      "members": [
+        {
+          "id": "camera-hw-accel",
+          "version": ">=0.1.8"
+        },
+        {
+          "id": "webcam-builtin",
+          "version": ">=0.1.1"
+        }
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/single-camera/doc/README.md",
+      "changelog_url": "single-camera/doc/CHANGELOG.md"
+    },
+    {
+      "name": "watch-and-control",
+      "title": "Watch and Control",
+      "version": "0.1.0",
+      "description": "See the print and drive the printer, from any browser. Installs the built-in camera with hardware video acceleration, plus the Remote Screen mirror, which puts the printer's own touchscreen in your browser and sends your taps back to it. Both the camera and the screen show up as tiles in Fluidd and Mainsail, so you never have to walk over to the machine.",
+      "tagline": "The camera and the printer's own touchscreen, in your browser.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
+      "printer_specific": true,
+      "published_at": "2026-07-27",
+      "updated_at": "2026-07-27",
+      "author": "bespoked",
+      "members": [
+        {
+          "id": "remote-screen",
+          "version": ">=0.1.21"
+        },
+        {
+          "id": "camera-hw-accel",
+          "version": ">=0.1.8"
+        },
+        {
+          "id": "webcam-builtin",
+          "version": ">=0.1.1"
+        }
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/watch-and-control/doc/README.md",
+      "changelog_url": "watch-and-control/doc/CHANGELOG.md"
+    },
+    {
+      "name": "watch-and-control-plus",
+      "title": "Watch and Control Plus",
+      "version": "0.1.0",
+      "description": "The full remote-eyes setup. Two camera views (the printer's built-in camera and a USB camera you plug in), hardware video acceleration so both streams stay off the CPU, the Remote Screen mirror that puts the printer's touchscreen in your browser and sends your taps back, and Timelapse, which turns the print into a video you can watch afterwards. Everything appears in Fluidd and Mainsail with no manual setup.",
+      "tagline": "Two cameras, the printer's touchscreen, and a timelapse of every print.",
+      "category": "camera",
+      "channel": "stable",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
+      "printer_specific": true,
+      "published_at": "2026-07-27",
+      "updated_at": "2026-07-27",
+      "author": "bespoked",
+      "members": [
+        {
+          "id": "remote-screen",
+          "version": ">=0.1.21"
+        },
+        {
+          "id": "camera-hw-accel",
+          "version": ">=0.1.8"
+        },
+        {
+          "id": "webcam-builtin",
+          "version": ">=0.1.1"
+        },
+        {
+          "id": "webcam-usb",
+          "version": ">=0.1.1"
+        },
+        {
+          "id": "timelapse",
+          "version": ">=0.1.1"
+        }
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/watch-and-control-plus/doc/README.md",
+      "changelog_url": "watch-and-control-plus/doc/CHANGELOG.md"
     }
   ],
   "lists": []
