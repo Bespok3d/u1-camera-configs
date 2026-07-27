@@ -1,0 +1,27 @@
+{
+  "kind": "collection",
+  "name": "single-camera",
+  "title": "Single Camera",
+  "version": "0.1.0",
+  "author": "bespoked",
+  "description": "Everything you need to watch a print with the camera the printer already has. Installs the hardware video acceleration and the built-in camera tile together, so the camera shows up in Fluidd and Mainsail and the encoding runs on the printer's video chip instead of its CPU. Start here if you only want one camera.",
+  "tagline": "The built-in camera, working, in one install.",
+  "category": "camera",
+  "channel": "stable",
+  "printer_specific": true,
+  "source": "https://github.com/Bespok3d/u1-camera-configs",
+  "publisher": "PLACEHOLDER",
+  "published_at": "2026-07-27",
+  "updated_at": "2026-07-27",
+  "changelog": "doc/CHANGELOG.md",
+  "members": [
+    {
+      "id": "camera-hw-accel",
+      "version": ">=0.1.8"
+    },
+    {
+      "id": "webcam-builtin",
+      "version": ">=0.1.1"
+    }
+  ]
+}

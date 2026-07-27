@@ -15,8 +15,14 @@ This repo is a co-repo of Bespok3d plugins for the Snapmaker U1 that publishes i
 shipping Klipper/Moonraker config and patches (assets and shell only, no Python):
 
 - **webcam-builtin**: Show the built-in MIPI camera in Fluidd & Mainsail.
-- **webcam-screen**: Show the on-device touchscreen as a camera tile in Fluidd & Mainsail.
 - **webcam-usb**: Show the external USB camera in Fluidd & Mainsail.
+- **single-camera**: collection, the built-in camera plus its hardware acceleration.
+- **double-camera**: collection, the built-in camera plus a USB camera, both accelerated.
+- **watch-and-control**: collection, the built-in camera plus the on-device screen mirror.
+- **watch-and-control-plus**: collection, both cameras plus the screen mirror and timelapse.
+
+The touchscreen-as-a-camera tile used to be its own plugin here (`webcam-screen`); it is part of the
+`remote-screen` plugin from version 0.1.21 on, so it no longer ships from this repo.
 
 Read `README.md` for the repo's layout, build, and release mechanics before you change anything.
 

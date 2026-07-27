@@ -5,8 +5,18 @@ A co-repo of Bespok3d plugins for the Snapmaker U1 that publishes its own sub-li
 Plugins:
 
 - **webcam-builtin** - Show the built-in MIPI camera in Fluidd & Mainsail.
-- **webcam-screen** - Show the on-device touchscreen as a camera tile in Fluidd & Mainsail.
 - **webcam-usb** - Show the external USB camera in Fluidd & Mainsail.
+
+Collections (`kind:collection`, no payload of their own, they install a set of plugins in one go):
+
+- **single-camera** - "Single Camera": the built-in camera plus its hardware acceleration.
+- **double-camera** - "Double Camera": the built-in camera plus a USB camera, both accelerated.
+- **watch-and-control** - "Watch and Control": the built-in camera plus the on-device screen mirror.
+- **watch-and-control-plus** - "Watch and Control Plus": both cameras plus the screen mirror and
+  timelapse.
+
+The touchscreen-as-a-camera tile used to be its own plugin here (`webcam-screen`); it is part of the
+`remote-screen` plugin from version 0.1.21 on, so it no longer ships from this repo.
 
 ## Layout
 

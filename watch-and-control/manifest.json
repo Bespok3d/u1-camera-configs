@@ -1,0 +1,31 @@
+{
+  "kind": "collection",
+  "name": "watch-and-control",
+  "title": "Watch and Control",
+  "version": "0.1.0",
+  "author": "bespoked",
+  "description": "See the print and drive the printer, from any browser. Installs the built-in camera with hardware video acceleration, plus the Remote Screen mirror, which puts the printer's own touchscreen in your browser and sends your taps back to it. Both the camera and the screen show up as tiles in Fluidd and Mainsail, so you never have to walk over to the machine.",
+  "tagline": "The camera and the printer's own touchscreen, in your browser.",
+  "category": "camera",
+  "channel": "stable",
+  "printer_specific": true,
+  "source": "https://github.com/Bespok3d/u1-camera-configs",
+  "publisher": "PLACEHOLDER",
+  "published_at": "2026-07-27",
+  "updated_at": "2026-07-27",
+  "changelog": "doc/CHANGELOG.md",
+  "members": [
+    {
+      "id": "remote-screen",
+      "version": ">=0.1.21"
+    },
+    {
+      "id": "camera-hw-accel",
+      "version": ">=0.1.8"
+    },
+    {
+      "id": "webcam-builtin",
+      "version": ">=0.1.1"
+    }
+  ]
+}

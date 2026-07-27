@@ -1,0 +1,31 @@
+{
+  "kind": "collection",
+  "name": "double-camera",
+  "title": "Double Camera",
+  "version": "0.1.0",
+  "author": "bespoked",
+  "description": "Two camera views of the same print, set up in one install: the printer's built-in camera and a USB camera you plug in yourself. Includes the hardware video acceleration, so both streams are encoded on the printer's video chip instead of its CPU. Both cameras appear as their own tile in Fluidd and Mainsail.",
+  "tagline": "Built-in camera plus a USB camera, both accelerated.",
+  "category": "camera",
+  "channel": "stable",
+  "printer_specific": true,
+  "source": "https://github.com/Bespok3d/u1-camera-configs",
+  "publisher": "PLACEHOLDER",
+  "published_at": "2026-07-27",
+  "updated_at": "2026-07-27",
+  "changelog": "doc/CHANGELOG.md",
+  "members": [
+    {
+      "id": "camera-hw-accel",
+      "version": ">=0.1.8"
+    },
+    {
+      "id": "webcam-builtin",
+      "version": ">=0.1.1"
+    },
+    {
+      "id": "webcam-usb",
+      "version": ">=0.1.1"
+    }
+  ]
+}
