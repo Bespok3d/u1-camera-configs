@@ -2,12 +2,12 @@
   "schema_version": 1,
   "name": "U1 Camera Configs",
   "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "plugins": [
     {
       "name": "webcam-builtin",
       "title": "Built-in Camera",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "Registers the printer's built-in MIPI camera as a Moonraker [webcam] entry, so Fluidd and Mainsail show it alongside any other configured camera. WebRTC stream from /webcam/webrtc, JPEG snapshots from /webcam/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
       "tagline": "Show the built-in MIPI camera in Fluidd & Mainsail.",
       "category": "camera",
@@ -15,7 +15,7 @@
       "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2025-11-03",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-07-28",
       "author": "bespoked",
       "requires": {
         "capabilities": [
@@ -41,7 +41,7 @@
       ],
       "changelog_url": "webcam-builtin/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/491827179",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/494336532",
       "deps": [
         "camera-service"
       ]
@@ -49,7 +49,7 @@
     {
       "name": "webcam-usb",
       "title": "USB Camera",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "Registers an external USB camera as a Moonraker [webcam] entry. WebRTC stream from /webcam2/webrtc, JPEG snapshots from /webcam2/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
       "tagline": "Show the external USB camera in Fluidd & Mainsail.",
       "category": "camera",
@@ -57,7 +57,7 @@
       "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2025-11-03",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-07-28",
       "author": "bespoked",
       "requires": {
         "capabilities": [
@@ -83,7 +83,7 @@
       ],
       "changelog_url": "webcam-usb/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/491827203",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/494336592",
       "deps": [
         "camera-service"
       ]
