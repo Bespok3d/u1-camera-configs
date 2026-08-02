@@ -26,7 +26,7 @@
         "webcam-builtin"
       ],
       "conflicts": [],
-      "min_daemon_version": "0.10.1-dev",
+      "min_daemon_version": "0.10.1",
       "config": [
         {
           "key": "BUILTIN_CAMERA_NAME",
@@ -68,7 +68,7 @@
         "webcam-usb"
       ],
       "conflicts": [],
-      "min_daemon_version": "0.10.1-dev",
+      "min_daemon_version": "0.10.1",
       "config": [
         {
           "key": "USB_CAMERA_NAME",
