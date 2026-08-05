@@ -2,7 +2,7 @@
   "name": "webcam-usb",
   "title": "USB Camera",
   "version": "0.1.2",
-  "license": "GPL-3.0-only",
+  "license": "https://github.com/Bespok3d/u1-camera-configs/blob/dev/webcam-usb/doc/LICENSE",
   "author": "bespoked",
   "min_daemon_version": "0.10.1",
   "description": "Registers an external USB camera as a Moonraker [webcam] entry. WebRTC stream from /webcam2/webrtc, JPEG snapshots from /webcam2/snapshot.jpg. Requires the Camera HW Accel plugin to actually serve those URLs.",
@@ -70,5 +70,6 @@
   },
   "endpoints": [],
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "attributions": "# Attributions - webcam-usb\n\n**Plugin author:** paxx12 (Extended Firmware overlay `60-app-camera`), packaged by Bespok3d\n\nMoonraker camera configuration.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Extended Firmware overlay `60-app-camera` | paxx12 | GPL-3.0 | no | yes |\n\nThe Moonraker config in this package is the USB WebRTC camera block from the Extended Firmware\noverlay `60-app-camera` (paxx12), GPL-3.0, in that overlay's `03_usb_camera.cfg`, where it ships\ncommented out. Four of its five lines ship here unchanged; only the camera name differs, because\nthis plugin lets the user set it. Every revision of that config file is paxx12's. The overlay also\ncarries V4L2 camera controls contributed by @justinh-rahb, which this plugin does not ship.\n"
 }

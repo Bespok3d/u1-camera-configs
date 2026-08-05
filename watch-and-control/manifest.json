@@ -27,5 +27,7 @@
       "id": "webcam-builtin",
       "version": ">=0.1.1"
     }
-  ]
+  ],
+  "license": "https://github.com/Bespok3d/u1-camera-configs/blob/dev/watch-and-control/doc/LICENSE",
+  "attributions": ""
 }
