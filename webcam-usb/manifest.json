@@ -13,7 +13,7 @@
   "changelog": "doc/CHANGELOG.md",
   "published_at": "2025-11-03",
   "updated_at": "2026-07-28",
-  "source": "https://github.com/bespok3d-org/plugin-webcam-usb",
+  "source": "https://github.com/Bespok3d/u1-camera-configs",
   "publisher": "PLACEHOLDER",
   "provides": [
     {
