@@ -43,7 +43,7 @@
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-builtin/doc/README.md",
       "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/494336532",
       "deps": [
-        "camera-service"
+        "camera-hw-accel"
       ]
     },
     {
@@ -85,7 +85,7 @@
       "doc_url": "https://github.com/Bespok3d/u1-camera-configs/blob/main/webcam-usb/doc/README.md",
       "download_url": "https://api.github.com/repos/Bespok3d/u1-camera-configs/releases/assets/494336592",
       "deps": [
-        "camera-service"
+        "camera-hw-accel"
       ]
     }
   ],
